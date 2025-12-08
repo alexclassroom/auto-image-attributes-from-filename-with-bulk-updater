@@ -154,6 +154,11 @@ I am glad to hear that! You can either [upgrade to pro](https://imageattributesp
 
 == Changelog ==
 
+= 4.9 =
+* Date: 
+* Tested with WordPress 6.9
+* Compatibility with Image Attributes Pro version 4.9. [Check what's new in 4.9](https://imageattributespro.com/changelog/?utm_source=wordpress.org&utm_medium=changelog).
+
 = 4.7.1 =
 * Date: 20.October.2025
 * Bug Fix: Fixed a bug in 4.7 that prevented the automatic generation of image attributes. 
