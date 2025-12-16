@@ -948,7 +948,16 @@ function iaff_admin_interface_render () {
 					<!-- Event log -->
 					<div id="bulk-updater-results">
 						<fieldset id="bulk-updater-log-wrapper">
-							<legend><span class="dashicons dashicons-welcome-write-blog"></span>&nbsp;<strong><?php _e('Event Log', 'auto-image-attributes-from-filename-with-bulk-updater'); ?></strong>&nbsp;<div class="iaff-spinner is-active" style="margin-top:0px;"></div></legend>
+							<legend><span class="dashicons dashicons-welcome-write-blog"></span>&nbsp;<strong><?php _e('Event Log', 'auto-image-attributes-from-filename-with-bulk-updater'); ?></strong>&nbsp;
+							
+							<?php 
+							$spinner='';
+							// Check if bulk updater is in progress
+							if ( function_exists( 'as_has_scheduled_action' ) && ( as_has_scheduled_action( 'iaffpro_bu_bulk_updater' ) === true ) ) {
+								$spinner = 'spinner';
+							}?>
+
+							<div class="iaff-spinner is-active <?php echo $spinner; ?>" style="margin-top:0px;"></div></legend>
 
 							<?php if ( function_exists( 'iaffpro_event_log_delete' ) ) { ?>
 								<div id="bulk-updater-delete-log-button" class="dashicons dashicons-trash" title="<?php _e( 'Delete Event Log', 'auto-image-attributes-from-filename-with-bulk-updater' ) ?>" style="float: right; opacity: 0.7; margin-top: -25px; font-size: 18px;"></div>
@@ -961,7 +970,7 @@ function iaff_admin_interface_render () {
 									$event_log = iaffpro_event_log_read();
 
 									foreach ( $event_log as $log ) {
-										echo '<p>' . $log . '</p>';
+										echo '<p class="iaff-event-log-line">' . $log . '</p>';
 									}
 								}
 								?>
