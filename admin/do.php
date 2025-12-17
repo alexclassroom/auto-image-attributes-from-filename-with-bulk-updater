@@ -529,7 +529,7 @@ function iaff_image_bulk_updater() {
 			};
 
 			$.post(ajaxurl, data, function (response) {
-				$('#bulk-updater-log').append('<p class="iaff-red"><span class="dashicons dashicons-remove"></span> ' + response.message + '</p>');
+				$('#bulk-updater-log').append('<p class="iaff-red iaff-event-log-line"><span class="dashicons dashicons-remove"></span> ' + response.message + '</p>');
 				$('#bulk-updater-log').append('<p>Number of Images Remaining: ' + response.remaining_images + '</p>');
 				$("#bulk-updater-log").animate({scrollTop:$("#bulk-updater-log")[0].scrollHeight - $("#bulk-updater-log").height()},200);
 			});

@@ -102,9 +102,9 @@ The pro add-on can update the image attributes from not just the image filename,
 * Update image caption and description in the media library. Existing image captions and descriptions can be preserved.
 * Build your own attributes using custom tags like `%filename%`, `%posttitle%`, `%sitetitle%`, `%category%`, `%tag%`, `%yoastfocuskw%`, `%yoastseotitle%`, `%rankmathfocuskw%`, `%seopresstargetkw%` and [many more](https://imageattributespro.com/custom-image-attribute-tags/?utm_source=wordpress.org&utm_medium=readme). Each custom tag will be replaced  with it's value. You can combine them as you please!
 * Choose to turn off any of the above mentioned features.
+* Choose specific post types to bulk update.
 * Bulk update image attributes in [ACF's WYSIWYG Editor](https://imageattributespro.com/acf-compatibility/?utm_source=wordpress.org&utm_medium=readme) and [Divi theme](https://imageattributespro.com/divi-compatibility/?utm_source=wordpress.org&utm_medium=readme).
 * Modify auto generated image attributes using the [iaffpro_image_attributes filter](https://imageattributespro.com/codex/iaffpro_image_attributes/?utm_source=wordpress.org&utm_medium=readme).
-* Choose specific post types to bulk update using the [iaffpro_included_post_types filter](https://imageattributespro.com/codex/iaffpro_included_post_types/?utm_source=wordpress.org&utm_medium=readme).
 * Disable updating of attributes in media library completely and just updated attributes in Post HTML or vice versa.
 * Add or remove custom image attributes using the [iaffpro_html_image_markup_post_update filter](https://imageattributespro.com/codex/iaffpro_html_image_markup_post_update/?utm_source=wordpress.org&utm_medium=readme)
 
@@ -155,7 +155,7 @@ I am glad to hear that! You can either [upgrade to pro](https://imageattributesp
 == Changelog ==
 
 = 4.9 =
-* Date: 
+* Date: 17.December.2025
 * Tested with WordPress 6.9
 * Compatibility with Image Attributes Pro version 4.9. [Check what's new in 4.9](https://imageattributespro.com/changelog/?utm_source=wordpress.org&utm_medium=changelog).
 
@@ -296,6 +296,11 @@ I am glad to hear that! You can either [upgrade to pro](https://imageattributesp
 * First release of the plugin.
 
 == Upgrade Notice ==
+
+= 4.9 =
+* Date: 17.December.2025 
+* Tested with WordPress 6.9 
+* Compatibility with Image Attributes Pro version 4.9. [Check what's new in 4.9](https://imageattributespro.com/changelog/?utm_source=wordpress.org&utm_medium=changelog). 
 
 = 4.7.1 =
 * Date: 20.October.2025 
