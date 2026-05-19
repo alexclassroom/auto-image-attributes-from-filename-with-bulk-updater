@@ -3,9 +3,9 @@ Contributors: arunbasillal
 Donate link: https://imageattributespro.com/?utm_source=wordpress.org&utm_medium=donate-link
 Tags: image seo, image title, alt text, bulk edit images, accessibility
 Requires at least: 3.5.0
-Tested up to: 6.9
+Tested up to: 6.9.4
 Stable tag: trunk
-License: GPLv2 or later
+License: GPL v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Automatically add Image Alt Text, Title, Caption and Description from Filename. Bulk update existing images. Great for Image SEO and Accessibility.
@@ -154,6 +154,11 @@ I am glad to hear that! You can either [upgrade to pro](https://imageattributesp
 
 == Changelog ==
 
+= 4.9.1 =
+* Date: 18.May.2025
+* Tested with WordPress 6.9.4
+* Added security fixes suggested by the plugins team and Plugin Check plugin.
+
 = 4.9 =
 * Date: 17.December.2025
 * Tested with WordPress 6.9
@@ -296,6 +301,11 @@ I am glad to hear that! You can either [upgrade to pro](https://imageattributesp
 * First release of the plugin.
 
 == Upgrade Notice ==
+
+= 4.9.1 =
+* Date: 18.May.2025
+* Tested with WordPress 6.9.4
+* Added security fixes suggested by the plugins team and Plugin Check plugin.
 
 = 4.9 =
 * Date: 17.December.2025 

@@ -735,6 +735,8 @@ function iaff_update_image( $image_id, $text, $bulk = false ) {
 			'error' 	=> __( 'Image object was not provided.', 'auto-image-attributes-from-filename-with-bulk-updater' )
 		];
 	}
+
+	$text = sanitize_text_field( $text );
 	
 	// Get Settings
 	$settings = iaff_get_settings();
