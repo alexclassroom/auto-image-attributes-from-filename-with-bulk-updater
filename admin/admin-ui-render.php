@@ -775,7 +775,7 @@ function iaff_custom_attribute_tags_ui_render( $data_attribute ) {
 
 	if ( ! empty( $available_tags ) ) :
 		?>
-		<p><?php _e( 'Available tags:' ); ?></p>
+		<p><?php _e( 'Available tags:', 'auto-image-attributes-from-filename-with-bulk-updater' ); ?></p>
 		<p><?php _e( 'The following tags when used in a custom attribute will be replaced with their corresponding value.', 'auto-image-attributes-from-filename-with-bulk-updater' ); ?></p>
 		<ul class="iaff-available-custom-attribute-tags" role="list">
 			<?php
@@ -1169,6 +1169,6 @@ function iaff_print_disabled_notice( $version ) {
 
 	echo 
 		'<p class="iaff-description">' . 
-			sprintf( __( 'Note: Requires Image Attributes Pro %s or newer to manage these options. <a href="%s" target="_blank">Read more.</a>', 'auto-image-attributes-from-filename-with-bulk-updater' ), $version, 'https://imageattributespro.com/backwards-compatibility/?utm_source=iaff-basic&utm_medium=bulk-updater-settings-tab' ) . 
+			sprintf( esc_html__( 'Note: Requires Image Attributes Pro %1$1s or newer to manage these options. <a href="%2$2s" target="_blank">Read more.</a>', 'auto-image-attributes-from-filename-with-bulk-updater' ), esc_html( $version ), 'https://imageattributespro.com/backwards-compatibility/?utm_source=iaff-basic&utm_medium=bulk-updater-settings-tab' ) . 
 		'</p>';
 }
